@@ -8,10 +8,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var photoImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    var name = ""
+    var image = UIImage()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        nameLabel.text = name
+        photoImageView.image = image
     }
 
 
